@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Questions</title>
+    <!-- Add your existing CSS here -->
+    <style>
+        /* Your existing CSS */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: none; /* Initially hidden */
+        }
+
+        .container.active {
+            display: block; /* Show the active container */
+        }
+
+        .navbar {
+            width: 93%;
+            background-color: #E5E5E5;
+            display: flex;
+            align-items: flex-start;
+            justify-content: left;
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+
+        /* .icon {
+            font-size: 30px;
+            position: absolute;
+            left: -32px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding: 5px;
+            color: #008080;
+        } */
+
+        .title {
+            color: #4F709C;
+            font-weight: 600;
+        }
+
+        .question h2 {
+            margin-bottom: 15px;
+            color: #000000;
+            letter-spacing: 0px;
+            font-size: 16px;
+        }
+
+        .question p {
+            font-size: 15px;
+            margin-bottom: 40px;
+            color: #000000;
+            font-weight: 550;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            background-color: #008080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .pagination span {
+            font-weight: bold;
+            color: #6481A8;
+            font-size: 12px;
+        }
+
+        .lines {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .Summary {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .lines input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #333;
+            margin-bottom: 3px;
+            font-size: 14px;
+            display: block;
+            /* padding: 5px; */
+        }
+
+        .container.active {
+            display: block; /* Show the active container */
+        }
+
+        .lines input:focus {
+            outline: none;
+            border-bottom: 1px solid #008080;
+        }
+
+
+       
+
+        .question1 p {
+            color: #000000;
+            letter-spacing: 0.2px;
+            font-weight:700
+        }
+
+        .question1 p {
+            font-size: 15px;
+            margin-bottom: 40px;
+            color: #000000;
+            font-weight: 700;
+            text-align: center;
+        }
+        .navbar-image {
+        height: 10px; 
+        width: 40px;  
+        border-radius: 50%;
+        margin-left: 260px;
+        margin-top: 7px;
+        cursor: pointer;
+        }
+
+        .paragraph{
+            text-align: left;
+            margin-bottom: 40px;
+            margin-left: 90px;
+        }
+
+        .lines input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #333;
+            margin-bottom: 3px;
+            font-size: 14px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing frontend structure COL 2(PART 2) -->
+    <div class="container active" id="page1">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>1. Write a response to a customer complaint received via email</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn1">← PREVIOUS</button>
+            <span>1/200</span>
+            <button id="nextBtn1">NEXT →</button>
+        </div>
+    </div>
+    <!--(PART 2) -->
+    <div class="container" id="page2">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>2. Draft a summary of the provided reading text.</h2>
+            <p>
+                Mindfulness meditation, rooted in ancient Buddhist practices, has gained widespread popularity in recent years for its numerous benefits to mental and physical health. Research suggests that regular mindfulness practice can reduce stress, anxiety, and depression, while also improving focus, memory, and overall well-being. By cultivating present-moment awareness and non-judgmental acceptance, individuals can develop greater resilience to life's challenges and enhance their quality of life. Moreover, mindfulness techniques are increasingly being incorporated into therapy, education, and workplace wellness programs, highlighting their versatility and effectiveness in diverse settings.
+            </p>
+        </div>
+
+        
+
+        <div class="pagination">
+            <button id="prevBtn2">← PREVIOUS</button>
+            <span>2/200</span>
+            <button id="nextBtn2">NEXT →</button>
+        </div>
+    </div>
+    <!--(PART 2) -->
+    <div class="container" id="page3">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>2. Draft a summary of the provided reading text.</h2>
+        </div>
+
+        <div class="Summary">
+            <p>Summary:</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn3">← PREVIOUS</button>
+            <span>3/200</span>
+            <button id="nextBtn3">NEXT →</button>
+        </div>
+    </div>
+    <!--(PART 2) -->
+    <div class="container" id="page4">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>3. Compose an argument supporting or opposing a position stated in a scenario.</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn4">← PREVIOUS</button>
+            <span>4/200</span>
+            <button id="nextBtn4">NEXT →</button>
+        </div>
+    </div>
+    <!--(PART 2) -->
+    <div class="container" id="page5">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>4. Write a project update email to a team.</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn5">← PREVIOUS</button>
+            <span>5/200</span>
+            <button id="nextBtn5">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page6">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>5. Create a short proposal for a new workplace initiative.</h2>
+        </div>
+        <div class="Summary">
+            <p>1. Flexible Work Hours Initiative Proposal:</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn6">← PREVIOUS</button>
+            <span>6/200</span>
+            <button id="nextBtn6">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page7">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>6. Edit a provided paragraph for clarity and grammar.</h2>
+        </div>
+        
+        <div class="summary">
+            <p>Flexible work hours initiative can be very beneficial for employees. It helps in improving
+                their work-life balance and overall job satisfaction. By allowing employees to choose their start and end
+                times within a specified window, they can work during their most productive hours. This can lead to
+                increased productivity and morale. However, it may also pose coordination challenges and requires clear
+                communication and accountability mechanisms. To ensure its effectiveness, the company should establish
+                guidelines and expectations, use technology for remote collaboration, and regularly evaluate the program to
+                make necessary adjustments.</p>
+        </div>
+        <button class="edit-btn">✏️ Edit</button>
+
+        
+
+        <div class="pagination">
+            <button id="prevBtn7">← PREVIOUS</button>
+            <span>7/200</span>
+            <button id="nextBtn7">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page8">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="Summaryy">
+            <p>Flexible work hours initiative can be very beneficial for employees. It helps in improving their work-life balance and overall job satisfaction. By allowing employees to choose their start and end times within a specified window, they can work during their most productive hours. This can lead to increased productivity and morale. However, it may also pose coordination challenges and requires clear communication and accountability mechanisms. To ensure its effectiveness, the company should establish guidelines and expectations, use technology for remote collaboration, and regularly evaluate the program to make necessary adjustments.</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn8">← PREVIOUS</button>
+            <span>8/200</span>
+            <button id="nextBtn8">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page9">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>7. Develop a persuasive closing paragraph for a sales pitch.</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn9">← PREVIOUS</button>
+            <span>9/200</span>
+            <button id="nextBtn9">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page10">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>8. Construct a memo announcing a team restructuring.</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn10">← PREVIOUS</button>
+            <span>10/200</span>
+            <button id="nextBtn10">NEXT →</button>
+        </div>
+    </div>
+    <div class="container" id="page11">
+        <div class="navbar">
+            <div class="title">Part 2 - Writing Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <h2>9. Explain the steps of a complex process relevant to the job.</h2>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn11">← PREVIOUS</button>
+            <span>11/200</span>
+            <button id="nextBtn11">NEXT →</button>
+        </div>
+    </div>
+    
+     <!--COL 3 (PART 3)-->
+    <div class="container"id="page12">
+        <div class="navbar">
+            <div class="title">Part 3 - Learning Questions</div>
+            
+        </div>
+
+        <div class="question">
+            <p>1. Given a problem scenario, identify the learning resources you would use to solve it.</p>
+        </div>
+
+        <div class="paragraph">
+            <p><strong>Problem Scenario 1:</strong> Need to Improve Project Management <br/>
+            Skills Learning Resources</p>
+            <p><strong>Problem Scenario 2:</strong> Need to Enhance Data Analysis Skills <br/>
+            Learning Resources</p>
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn12">← PREVIOUS</button>
+            <span>12/200</span>
+            <button id="nextBtn12">NEXT →</button>
+        </div>
+    </div>
+    <!-- Page 2 Content -->
+
+    <div class="container" id="page13">
+        <div class="navbar">
+            <div class="title">Part 3 - Learning Questions</div>
+            <img src="images/dropdown.svg" alt="Profile Image" class="navbar-image">
+        </div>
+
+        <div class="question">
+            <p>Problem Scenario 1 : Need to Improve Project Management Skills Learning Resources</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn13">← PREVIOUS</button>
+            <span>13/200</span>
+            <button id="nextBtn13">NEXT →</button>
+        </div>
+    </div>
+    <!-- Page 3 Content -->
+    <div class="container" id="page14">
+        <div class="navbar">
+            <div class="title">Part 3 - Learning Questions</div>
+            <img src="images/dropdown.svg" alt="Profile Image" class="navbar-image">
+        </div>
+
+        <div class="question">
+            <p>Problem Scenario 2 : Need to Enhance Data Analysis Skills Learning Resources</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn14">← PREVIOUS</button>
+            <span>14/200</span>
+            <button id="nextBtn14">NEXT →</button>
+        </div>
+    </div>
+    <!-- Page 4 Content -->
+    <div class="container" id="page15">
+        <div class="navbar">
+            <!-- <div class="icon">×</div> -->
+            <div class="title">Part 3 - Learning Questions</div>
+            <img src="images/dropdown.svg" alt="Profile Image" class="navbar-image">
+            <!-- <span class="timer">15:00</span> -->
+        </div>
+
+        <div class="question">
+            <p>2. List the steps you would take to train someone in your job role.</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn15">← PREVIOUS</button>
+            <span>15/200</span>
+            <button id="nextBtn15">NEXT →</button>
+        </div>
+    </div>
+    
+
+    <!-- Page 5 Content -->
+    <div class="container" id="page16">
+        <div class="navbar">
+            <div class="title">Part 3 - Learning Questions</div>
+        </div>
+
+        <div class="question">
+            <p>3. Describe a project you completed that required rapid learning.</p>
+        </div>
+
+        <div class="lines">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn16">← PREVIOUS</button>
+            <span>16/200</span>
+            <button id="nextBtn16">NEXT →</button>
+        </div>
+    </div>
+    <!-- Part 6 -->
+    
+<div class="container" id="page17">
+    <div class="navbar">
+        <div class="title">Part 3 - Learning Questions</div>
+        <img src="images/dropdown.svg" alt="Profile Image" class="navbar-image">
+    </div>
+
+    <div class="question">
+        <h2>4. Create a learning plan for a new team member.</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+    </div>
+    
+    <div class="pagination">
+        <button id="prevBtn17">← PREVIOUS</button>
+        <span>17/200</span>
+        <button id="nextBtn17">NEXT →</button>
+    </div>
+</div>    
+
+<!-- Part-6.6 -->
+<div class="container" id="page18">
+    <div class="navbar">
+        <div class="title">Part 3 - Learning Questions</div>
+        <img src="images/dropdown.svg" alt="Profile Image" class="navbar-image">
+    </div>
+
+    <div class="question">
+         <h2>5. Discuss how continuous learning can be integrated into daily work routines.</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+        <input type="text" placeholder="">
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn18">← PREVIOUS</button>
+        <span>18/200</span>
+        <button id="nextBtn18">NEXT →</button>
+    </div>
+</div>
+<!--COL 4(PART 4)-->
+<div class="container" id="page19">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2> 1. How frequently do you use digital tools to complete your work tasks?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn19">← PREVIOUS</button>
+        <span>19/200</span>
+        <button id="nextBtn19">NEXT →</button>
+    </div>
+</div>
+<!--2(PART 4)-->
+<div class="container" id="page20">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>2. On a scale of 1-10, how comfortable do you feel using new technology platforms at work?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn20">← PREVIOUS</button>
+        <span>20/200</span>
+        <button id="nextBtn20">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page21">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>3. Do you feel you have sufficient training to use our digital systems effectively? </h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn21">← PREVIOUS</button>
+        <span>21/200</span>
+        <button id="nextBtn21">NEXT →</button>
+    </div>
+</div>
+<!--(PART 4)-->
+<div class="container" id="page22">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>4. What digital tools do you think could enhance your productivity at work? </h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn22">← PREVIOUS</button>
+        <span>22/200</span>
+        <button id="nextBtn22">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page23">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2> 5. How often do you seek help for technical issues from our IT support team?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn23">← PREVIOUS</button>
+        <span>23/200</span>
+        <button id="nextBtn23">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page24">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>6. Can you describe a recent situation where you successfully solved a problem using digital tools?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn24">← PREVIOUS</button>
+        <span>24/200</span>
+        <button id="nextBtn24">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page25">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>7. In terms of digital tools and platforms, what additional skills would you like to acquire?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn25">← PREVIOUS</button>
+        <span>25/200</span>
+        <button id="nextBtn25">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page26">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+        <h2>8. In terms of digital tools and platforms, what additional skills would you like to acquire?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn26">← PREVIOUS</button>
+        <span>26/200</span>
+        <button id="nextBtn26">NEXT →</button>
+    </div>
+</div><!--(PART 4)-->
+<div class="container" id="page27">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>9. In terms of digital tools and platforms, what additional skills would you like to acquire?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn27">← PREVIOUS</button>
+        <span>27/200</span>
+        <button id="nextBtn27">NEXT →</button>
+    </div>
+</div>
+<!--(PART 4)-->
+<div class="container" id="page28">
+    <div class="navbar">
+        <div class="title">Part 4 - Digital Engagement</div>
+    </div>
+    <h4>Digital Engagement</h4>
+    <br/>
+
+    <div class="question">
+         <h2>10 . Rate your ability to navigate our company’s digital resources when working remotely.</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn28">← PREVIOUS</button>
+        <span>28/200</span>
+        <button id="nextBtn28">NEXT →</button>
+    </div>
+</div>
+<!-- COL5(PART5)-->
+<div class="container" id="page29">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>1. How do you stay updated with the latest trends and developments in your industry to foster innovation in your work?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn29">← PREVIOUS</button>
+        <span>29/200</span>
+        <button id="nextBtn29">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page30">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>2. Can you provide an example of a time when you introduced a new idea or process that significantly improved efficiency or productivity in your previous role?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn30">← PREVIOUS</button>
+        <span>30/200</span>
+        <button id="nextBtn30">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page31">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>3. How do you approach problem-solving and generate innovative solutions when faced with challenges in the workplace?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn31">← PREVIOUS</button>
+        <span>31/200</span>
+        <button id="nextBtn31">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page32">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>4. What strategies do you employ to encourage creativity and innovation within a team environment?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn32">← PREVIOUS</button>
+        <span>32/200</span>
+        <button id="nextBtn32">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page33">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>5. Can you describe a project where you took a creative approach to achieve a desired outcome, even when faced with limited resources or constraints?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn33">← PREVIOUS</button>
+        <span>33/200</span>
+        <button id="nextBtn33">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page34">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>6. How do you balance the need for innovation with the practical requirements of meeting deadlines and achieving goals in a job setting?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn34">← PREVIOUS</button>
+        <span>34/200</span>
+        <button id="nextBtn34">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page35">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>7. Have you ever taken the initiative to implement a new technology or tool to streamline processes or enhance performance in your role?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn35">← PREVIOUS</button>
+        <span>35/200</span>
+        <button id="nextBtn35">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page36">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>8. How do you solicit feedback from colleagues or stakeholders to continuously improve and innovate in your work?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn36">← PREVIOUS</button>
+        <span>36/200</span>
+        <button id="nextBtn36">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page37">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>9. Can you discuss a time when you successfully adapted to changes in your industry or job role by embracing innovative practices or techniques?</h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn37">← PREVIOUS</button>
+        <span>37/200</span>
+        <button id="nextBtn37">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page38">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2>10.What steps do you take to foster a culture of innovation within your own professional development journey, and how do you integrate new ideas into your skill set? </h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn38">← PREVIOUS</button>
+        <span>38/200</span>
+        <button id="nextBtn38">NEXT →</button>
+    </div>
+</div>
+<!-- (PART5)-->
+<div class="container" id="page39">
+    <div class="navbar">
+        <div class="title">Part 5 - Initiative and Innovation</div>
+    </div>
+    <h4>Initiative and Innovation</h4>
+    <br/>
+
+    <div class="question">
+         <h2></h2>
+    </div>
+
+    <div class="lines">
+        <input type="text" placeholder="">
+        
+    </div>
+
+    <div class="pagination">
+        <button id="prevBtn39">← PREVIOUS</button>
+        <span>39/200</span>
+        <button id="nextBtn39">NEXT →</button>
+    </div>
+</div>
+
+    
+
+    <script>
+        const inputs = document.querySelectorAll('.lines input');
+        inputs.forEach((input, index) => {
+            input.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    const nextInput = inputs[index + 1];
+                    if (nextInput) {
+                        nextInput.focus();
+                    }
+                }
+            });
+        });
+    
+        const pages = document.querySelectorAll('.container');
+        const nextButtons = document.querySelectorAll('[id^="nextBtn"]');
+        const prevButtons = document.querySelectorAll('[id^="prevBtn"]');
+    
+        let currentPage = 0;
+    
+        function switchPage(newPage) {
+            if (newPage >= 0 && newPage < pages.length) {
+                pages[currentPage].classList.remove('active');
+                currentPage = newPage;
+                pages[currentPage].classList.add('active');
+            }
+        }
+    
+        nextButtons.forEach((button, index) => {
+            button.addEventListener('click', async () => {
+                const inputs = pages[currentPage].querySelectorAll('.lines input');
+                const answers = Array.from(inputs).map(input => input.value).filter(val => val.trim() !== "");
+    
+                if (answers.length > 0) {
+                    try {
+                        const results = [];
+                        for (const answer of answers) {
+                            const response = await fetch('http://localhost:5000/api/answers', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ questionId: index + 1, answer }),
+                            });
+    
+                            const data = await response.json();
+                            results.push(data);
+                        }
+    
+                        // Show the score for each answer
+                        results.forEach((result, i) => {
+                           alert(`Answer ${i + 1} Score: ${result.score}`);
+                        });
+                    } catch (err) {
+                        console.error('Error saving answers:', err);
+                        alert('Failed to save answers.');
+                        return;
+                    }
+                }
+    
+                switchPage(currentPage + 1);
+            });
+        });
+    
+        prevButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                switchPage(currentPage - 1);
+            });
+        });
+    </script>
+    
+</body>
+</html>

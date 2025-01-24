@@ -1,0 +1,16 @@
+fastapi~=0.115.4
+uvicorn
+rake-nltk
+nltk~=3.9.1
+scikit-learn
+
+utils~=1.0.2
+pydantic~=2.9.2
+
+
+
+
+
+
+
+
